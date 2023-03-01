@@ -5,6 +5,8 @@ import router from './router'
 import PrimeVue from 'primevue/config'
 
 import Button from 'primevue/Button';
+import Toolbar from 'primevue/toolbar';
+import Sidebar from 'primevue/sidebar';
 
 import 'primevue/resources/themes/saga-blue/theme.css'
 import 'primevue/resources/primevue.min.css'                 
@@ -15,6 +17,8 @@ import './assets/main.css'
 const app = createApp(App)
 
 app.component('Button', Button);
+app.component('Toolbar', Toolbar);
+app.component('Sidebar', Sidebar);
 
 app.use(
     createAuth0({
